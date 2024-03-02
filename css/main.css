@@ -18,6 +18,8 @@ body {
   background-color: #1e1e1e;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 img, picture, video, canvas, svg {
@@ -37,8 +39,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
   margin-bottom: 120px;
 }
 
@@ -46,12 +46,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  img {
-    width: 250px;
-    height: 250px;
-    margin-right: 54px;
-  }
+section img {
+  width: 250px;
+  height: 250px;
+  margin-right: 54px;
 }
 
 a, p, h1, h2, h3, h4, h5, h6 {
@@ -77,4 +77,43 @@ h2 {
 
 p {
   font-size: 18px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+
+@media (max-width: 1250px) {
+  body {
+    margin: 0px;
+  }
+
+  header {
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  header h2,
+  header a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  header h2 {
+    margin-bottom: 32px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  section img {
+    margin: 0px 0px 32px 0px;
+  }
+
+  section p{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
